@@ -13,8 +13,6 @@
         
         <!--revisar por que no funciona con el archivo descargado-->
         <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-            
     </head>
     <body >
         <div id="div" ng-controller="ProyectoController as proyecto">
@@ -32,30 +30,15 @@
                               <!-- menu -->
                               <div id="MainMenu">
                                 <div class="list-group panel">
-                                  <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 1</a>
-                                  <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 2</a>
-                                  <a href="#demo3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 3 <i class="fa fa-caret-down"></i></a>
-                                  <div class="collapse" id="demo3" style="height: 0px;">
-                                    <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-                                    <div class="collapse list-group-submenu" id="SubMenu1">
-                                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-                                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-                                      <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-                                      <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                                        <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                                    <div  ng-repeat="menus in proyecto.proyecto.menus">
+                                        <!--a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu" > <strong>{{ menus.name }}</strong></a-->
+                                        <a href="#{{menus.name}}" class="{{menus.typeform}}" data-toggle="collapse" data-parent="#MainMenu"> <strong>{{menus.name}}</strong><i class="fa fa-caret-down"></i></a>
+                                        <div class="collapse" id="{{menus.name}}" style="height: 0px;">
+                                            <div ng-repeat="submenu in menus.submenus">
+                                                <a href="" class="list-group-item">{{submenu.name}}</a>
+                                            </div>
+                                          </div>
                                       </div>
-                                      <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-                                    </div>
-                                    <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                                    <a href="javascript:;" class="list-group-item">Subitem 3</a>
-                                  </div>
-                                  <a href="#demo4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 4  <i class="fa fa-caret-down"></i></a>
-                                  <div class="collapse" id="demo4">
-                                    <a href="" class="list-group-item">Subitem 1</a>
-                                    <a href="" class="list-group-item">Subitem 2</a>
-                                    <a href="" class="">Subitem 3</a>
-                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -63,7 +46,8 @@
                         </div>
                     </div>
                 </div>
-                
+                <div id="divbodymenu2" class="well">
+                </div>
             </div>
             <div class="modal-footer">
                 <p> {{proyecto.proyecto.footer}} </p>
