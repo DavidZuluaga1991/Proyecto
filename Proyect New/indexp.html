@@ -1,0 +1,68 @@
+<html lang="en"><head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Bootply snippet - Bootstrap Vertical Sidebar - Accordion Menu with Submenus</title>
+        <meta name="generator" content="Bootply">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Bootstrap Accordion vertical menu with submenues based on list group example snippet for Bootstrap."><link rel="stylesheet" href="Css/bootstrap.css">
+
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body>
+        
+        <div class="container-fluid">
+  <h2>Vertical Sidebar - Accordion Menu</h2>
+  
+  <hr>
+  
+  <div class="row">
+    <div class="col-md-2">
+      
+      <!-- menu -->
+      <div id="MainMenu">
+        <div class="list-group panel">
+          <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 1</a>
+          <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 2</a>
+          <a href="#demo3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 3 <i class="fa fa-caret-down"></i></a>
+          <div class="collapse" id="demo3" style="height: 0px;">
+            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+            <div class="collapse list-group-submenu" id="SubMenu1">
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+              <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+              </div>
+              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+            </div>
+            <a href="javascript:;" class="list-group-item">Subitem 2</a>
+            <a href="javascript:;" class="list-group-item">Subitem 3</a>
+          </div>
+          <a href="#demo4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 4  <i class="fa fa-caret-down"></i></a>
+          <div class="collapse" id="demo4">
+            <a href="" class="list-group-item">Subitem 1</a>
+            <a href="" class="list-group-item">Subitem 2</a>
+            <a href="" class="">Subitem 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div>
+    
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+
+        <script type="text/javascript src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+
+
+        
+        
+    
+</body></html>
