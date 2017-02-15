@@ -7,7 +7,7 @@
           menus:[
                   {
                       name:'Inicio',
-                      submenus:[{name:''}]
+                      submenus:[{name:'Inicio'}]
                   },
                   {
                       name:'Contabilidad',
@@ -40,7 +40,7 @@
                   },
                   {
                       name:'Contactenos',
-                      submenus:[{name:''}]
+                      submenus:[{name:'Contactenos'}]
                   }
                ]
         };
@@ -54,7 +54,6 @@
         
 /*-------------------- Proceso que sirve para linkear los botones ------------------------*/
        
-        var menus = ['Mexico', 'España', 'Argentina', 'Chile', 'Colombia', 'Venezuela', 'Perú', 'Costa Rica'];
         var link = [
             {name: 'Inicio', url: '/Inicio', templateUrl: '<h3>Inicio!</h3>'},
             {name: 'Actualización Contable', url: '/Actualización Contable', templateUrl: '<h3>Actualización Contable!</h3>'},
@@ -67,14 +66,14 @@
             {name: 'Mantenimiento de Equipos', url: '/Mantenimiento de Equipos', templateUrl: '<h3>Mantenimiento de Equipos!</h3>'},
             {name: 'Contabilidad basica', url: '/Contabilidad basica', templateUrl: '<h3>Contabilidad basica!</h3>'},
             {name: 'Contabilidad intermedia', url: '/Contabilidad intermedia', templateUrl: '<h3>Contabilidad intermedia!</h3>'},
-            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: '<h3>Contabilidad de costos!</h3>'},
+            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: 'Contabilidad de costos!'},
         ]
         for (var valor of link) {
             var MenuState = 
                 {
                     name: valor.name,
                     url: '/' + valor.name,
-                    template: valor.templateUrl
+                    template: '<h5>'+valor.templateUrl+'!</h5>'
                 }
           $stateProvider.state(MenuState);
     }

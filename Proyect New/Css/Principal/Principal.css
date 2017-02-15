@@ -132,34 +132,7 @@ h6,
   line-height: 1.1;
   color: #ffffff;
 }
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #888888;
-}
+
 h1,
 .h1,
 h2,
@@ -168,20 +141,6 @@ h3,
 .h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-h1 small,
-.h1 small,
-h2 small,
-.h2 small,
-h3 small,
-.h3 small,
-h1 .small,
-.h1 .small,
-h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-  font-size: 65%;
 }
 h4,
 .h4,
@@ -192,21 +151,7 @@ h6,
   margin-top: 10px;
   margin-bottom: 10px;
 }
-h4 small,
-.h4 small,
-h5 small,
-.h5 small,
-h6 small,
-.h6 small,
-h4 .small,
-.h4 .small,
-h5 .small,
-.h5 .small,
-h6 .small,
-.h6 .small {
-  font-size: 75%;
-}
-h1,
+/*h1,
 .h1 {
   font-size: 56px;
 }
@@ -229,4 +174,104 @@ h5,
 h6,
 .h6 {
   font-size: 16px;
+}*/
+/*-------------------- Responsive Web ------------------*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h1,
+    .h1 {
+      font-size: 26px;
+    }
+    h2,
+    .h2 {
+      font-size: 22px;
+    }
+    h3,
+    .h3 {
+      font-size: 18px;
+    }
+    h4,
+    .h4 {
+      font-size: 14px;
+    }
+    h5,
+    .h5 {
+      font-size: 11px;
+    }
+    h6,
+    .h6 {
+      font-size: 7px;
+    }
+    
+    
+    .well {
+      min-height: 10px;
+      padding: 19px;
+      margin-bottom: 20px;
+    }
+    #divbodymenu {
+        /*position: absolute;*/
+        /*height: 85%;*/
+        width: 225px;
+    }
+    .panel-heading{padding:2px 5px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
+    .list-group-item{position:relative;display:block;padding:2px 5px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    
+    h1,
+    .h1 {
+      font-size: 53px;
+    }
+    h2,
+    .h2 {
+      font-size: 42px;
+    }
+    h3,
+    .h3 {
+      font-size: 31px;
+    }
+    h4,
+    .h4 {
+      font-size: 21px;
+    }
+    h5,
+    .h5 {
+      font-size: 17px;
+    }
+    h6,
+    .h6 {
+      font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    h1,
+    .h1 {
+      font-size: 56px;
+    }
+    h2,
+    .h2 {
+      font-size: 45px;
+    }
+    h3,
+    .h3 {
+      font-size: 34px;
+    }
+    h4,
+    .h4 {
+      font-size: 24px;
+    }
+    h5,
+    .h5 {
+      font-size: 20px;
+    }
+    h6,
+    .h6 {
+      font-size: 16px;
+    }
 }

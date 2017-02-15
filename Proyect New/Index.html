@@ -5,7 +5,6 @@
     <script src="js/angular-ui-router/angular-ui-router.js"></script>
     <script src="js/ui-bootstrap-tpls/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="js/app.js"></script>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="Css/bootstrap.min/bootstrap.min.css" rel="stylesheet">
     <LINK REL="StyleSheet" HREF="css/Principal/principal.css" TYPE="text/css" MEDIA=screen></LINK>
     <!--link href="Css/bootstrap.css" rel="stylesheet"-->
@@ -21,7 +20,7 @@
                     <div class="left-nav">
                         <accordion close-others="true" >
                               <accordion-group is-open="isopen" ng-repeat="menus in proyecto.proyecto.menus" ng-controller="ItemController"> 
-                                  <accordion-heading> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i> </accordion-heading>
+                                  <accordion-heading> <h5> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></h5> </accordion-heading>
                                   <div ng-repeat="submenu in menus.submenus"><a ui-sref="{{submenu.name}}" ui-sref-active="active" class="list-group-item">{{submenu.name}}</a></div>
                               </accordion-group>
                         </accordion>
