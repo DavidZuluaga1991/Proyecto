@@ -1,68 +1,60 @@
-<html lang="en"><head>
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
-        <meta charset="utf-8">
-        <title>Bootply snippet - Bootstrap Vertical Sidebar - Accordion Menu with Submenus</title>
-        <meta name="generator" content="Bootply">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="description" content="Bootstrap Accordion vertical menu with submenues based on list group example snippet for Bootstrap."><link rel="stylesheet" href="Css/bootstrap.css">
-
-    </head>
-    
-    <!-- HTML code from Bootply.com editor -->
-    
-    <body>
-        
-        <div class="container-fluid">
-  <h2>Vertical Sidebar - Accordion Menu</h2>
-  
-  <hr>
-  
-  <div class="row">
-    <div class="col-md-2">
-      
-      <!-- menu -->
-      <div id="MainMenu">
-        <div class="list-group panel">
-          <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 1</a>
-          <a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu">Item 2</a>
-          <a href="#demo3" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 3 <i class="fa fa-caret-down"></i></a>
-          <div class="collapse" id="demo3" style="height: 0px;">
-            <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-            <div class="collapse list-group-submenu" id="SubMenu1">
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-              <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-              <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-              </div>
-              <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-            </div>
-            <a href="javascript:;" class="list-group-item">Subitem 2</a>
-            <a href="javascript:;" class="list-group-item">Subitem 3</a>
-          </div>
-          <a href="#demo4" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#MainMenu">Item 4  <i class="fa fa-caret-down"></i></a>
-          <div class="collapse" id="demo4">
-            <a href="" class="list-group-item">Subitem 1</a>
-            <a href="" class="list-group-item">Subitem 2</a>
-            <a href="" class="">Subitem 3</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-</div>
-    
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-
-
-        <script type="text/javascript src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
-
-
-        
-        
-    
-</body></html>
+div ng-controller="AccordionDemoCtrl"><font></font>
+  <script type="text/ng-template" id="group-template.html"><font></font>
+    <div class="panel-heading"><font></font>
+      <h4 class="panel-title" style="color:#fa39c3"><font></font>
+        <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading"><font></font>
+          <span uib-accordion-header ng-class="{'text-muted': isDisabled}"><font></font>
+            {{heading}}<font></font>
+          </span><font></font>
+        </a><font></font>
+      </h4><font></font>
+    </div><font></font>
+    <div class="panel-collapse collapse" uib-collapse="!isOpen"><font></font>
+      <div class="panel-body" style="text-align: right" ng-transclude></div><font></font>
+    </div><font></font>
+  </script><font></font>
+<font></font>
+  <p><font></font>
+    <button type="button" class="btn btn-default btn-sm" ng-click="status.open = !status.open">Toggle last panel</button><font></font>
+    <button type="button" class="btn btn-default btn-sm" ng-click="status.isFirstDisabled = ! status.isFirstDisabled">Enable / Disable first panel</button><font></font>
+  </p><font></font>
+<font></font>
+  <div class="checkbox"><font></font>
+    <label><font></font>
+      <input type="checkbox" ng-model="oneAtATime"><font></font>
+      Open only one at a time<font></font>
+    </label><font></font>
+  </div><font></font>
+  <uib-accordion close-others="oneAtATime"><font></font>
+    <div uib-accordion-group class="panel-default" heading="Static Header, initially expanded" is-open="status.isFirstOpen" is-disabled="status.isFirstDisabled"><font></font>
+      This content is straight in the template.<font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-default" heading="{{group.title}}" ng-repeat="group in groups"><font></font>
+      {{group.content}}<font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-default" heading="Dynamic Body Content"><font></font>
+      <p>The body of the uib-accordion group grows to fit the contents</p><font></font>
+      <button type="button" class="btn btn-default btn-sm" ng-click="addItem()">Add Item</button><font></font>
+      <div ng-repeat="item in items">{{item}}</div><font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-default" heading="Custom template" template-url="group-template.html"><font></font>
+      Hello<font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-default" is-open="status.isCustomHeaderOpen" template-url="group-template.html"><font></font>
+      <uib-accordion-heading><font></font>
+        Custom template with custom header template <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.isCustomHeaderOpen, 'glyphicon-chevron-right': !status.isCustomHeaderOpen}"></i><font></font>
+      </uib-accordion-heading><font></font>
+      World<font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-danger" heading="Delete account"><font></font>
+      <p>Please, to delete your account, click the button below</p><font></font>
+      <button class="btn btn-danger">Delete</button><font></font>
+    </div><font></font>
+    <div uib-accordion-group class="panel-default" is-open="status.open"><font></font>
+      <uib-accordion-heading><font></font>
+        I can have markup, too! <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i><font></font>
+      </uib-accordion-heading><font></font>
+      This is just some content to illustrate fancy headings.<font></font>
+    </div><font></font>
+  </uib-accordion><font></font>
+</div><font></font>

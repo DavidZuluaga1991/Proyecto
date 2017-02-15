@@ -1,58 +1,43 @@
-<!DOCTYPE html>
-<html ng-app = "proyecto">
-    <head>
-        <title></title>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <!--link  rel="stylesheet" href="Css/bootstrap.min.css"-->
-        <link rel="stylesheet" href="Css/bootstrap.css">
-        <LINK REL=StyleSheet HREF="css/Principal/principal.css" TYPE="text/css" MEDIA=screen></LINK>
-        
-        <script src="js/app.js"></script>
-        <script type="text/javascript" src="/js/bootstrap.min2.js"></script>
-        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        
-        <!--revisar por que no funciona con el archivo descargado-->
-        <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    </head>
-    <body >
-        <div id="div" ng-controller="ProyectoController as proyecto">
+<!doctype html>
+<html ng-app="proyecto">
+  <head>
+    <script src="js/angular/angular.js"></script>
+    <script src="js/angular-ui-router/angular-ui-router.js"></script>
+    <script src="js/ui-bootstrap-tpls/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="js/app.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Css/bootstrap.min/bootstrap.min.css" rel="stylesheet">
+    <LINK REL="StyleSheet" HREF="css/Principal/principal.css" TYPE="text/css" MEDIA=screen></LINK>
+    <!--link href="Css/bootstrap.css" rel="stylesheet"-->
+  </head>
+    <body>
+        <div id = "div" class="mycontainer" ng-controller="ProyectoController as proyecto">
             <div class="modal-header" id="divhead">
                 
             </div>
             <div id="divbody">
-                <div class="well blockquote"> <div class="panel-default"> <div id="txtbarner"> <h6> {{proyecto.proyecto.barner}}</h6></div></div></div>
+                <div class="well blockquote"> <div class="panel-default"> <div id="txtbarner"> <h4> {{proyecto.proyecto.barner}}</h4></div></div></div>
                 <div id="divbodymenu" class="well">
-                    <div class="panel-default">
-                        <div class="container-fluid">
-                          <div class="row">
-                            <div class="col-md-2">
-
-                              <!-- menu -->
-                              <div id="MainMenu">
-                                <div class="list-group panel">
-                                    <div  ng-repeat="menus in proyecto.proyecto.menus">
-                                        <!--a href="#" class="list-group-item list-group-item-success" data-parent="#MainMenu" > <strong>{{ menus.name }}</strong></a-->
-                                        <a href="#{{menus.name}}" class="{{menus.typeform}}" data-toggle="collapse" data-parent="#MainMenu"> <strong>{{menus.name}}</strong><i class="fa fa-caret-down"></i></a>
-                                        <div class="collapse" id="{{menus.name}}" style="height: 0px;">
-                                            <div ng-repeat="submenu in menus.submenus">
-                                                <a href="" class="list-group-item">{{submenu.name}}</a>
-                                            </div>
-                                          </div>
-                                      </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="left-nav">
+                        <accordion close-others="true" >
+                              <accordion-group is-open="isopen" ng-repeat="menus in proyecto.proyecto.menus" ng-controller="ItemController"> 
+                                  <accordion-heading> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i> </accordion-heading>
+                                  <div ng-repeat="submenu in menus.submenus"><a ui-sref="{{submenu.name}}" ui-sref-active="active" class="list-group-item">{{submenu.name}}</a></div>
+                              </accordion-group>
+                        </accordion>
                     </div>
+                    <div class="content">
+                    </div>
+                    
                 </div>
+                
                 <div id="divbodymenu2" class="well">
+                    <ui-view></ui-view>
                 </div>
             </div>
             <div class="modal-footer">
                 <p> {{proyecto.proyecto.footer}} </p>
             </div>
-        </div>  
-        
+        </div>
     </body>
 </html>
