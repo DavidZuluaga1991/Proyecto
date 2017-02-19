@@ -24,7 +24,7 @@
                   {
                       name:'Sistemas',
                       submenus:[
-                          {name:'Mantenimiento de Equipos'}
+                          {name:'Mantenimiento de Equiposss'}
                       ]
                   },
                   {
