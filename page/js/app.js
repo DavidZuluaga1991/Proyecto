@@ -57,7 +57,7 @@
 /*-------------------- Proceso que sirve para linkear los botones ------------------------*/
        
         var link = [
-            {name: 'Inicio', url: '/Inicio', templateUrl: '<h3>Inicio!</h3>'},
+            {name: 'Inicio', url: '/Inicio', templateUrl: 'hola como estasbn o q?'},
             {name: 'Actualización Contable', url: '/Actualización Contable', templateUrl: '<h3>Actualización Contable!</h3>'},
             {name: 'Tributaria', url: '/Tributaria', templateUrl: '<h3>Tributaria!</h3>'},
             {name: 'Auditoria y revisoria fiscal', url: '/Auditoria y revisoria fiscal', templateUrl: '<h3>Auditoria y revisoria fiscal!</h3>'},
