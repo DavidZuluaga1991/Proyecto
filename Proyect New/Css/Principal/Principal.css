@@ -1,25 +1,6 @@
 html, body {
     height: 100%; /* hacer que la página llene toda la altura */
 }
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-body {
-  margin: 0;
-}
-html {
-  font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #888888;
-  background-color: #060606;
-}
 #div{
     /*background-color:azure;*/
     position: absolute; 
@@ -49,18 +30,6 @@ body {
     /*position: absolute;*/
     height: 85%;
     width: 275px;
-    float: left;
-    /*background-color: black;*/
-    /*text-decoration-color: floralwhite;*/
-    /*color: aliceblue;*/
-    border-radius: 5px 5px 5px 5px;
-    /*--margin-top: 5px;  /* estas cifras tienen que ser opostas */
-}
-#divbodymenu2{
-    /*position: absolute;*/
-    height: auto;
-    width: 83.5%;
-    float: right;
     /*background-color: black;*/
     /*text-decoration-color: floralwhite;*/
     /*color: aliceblue;*/
@@ -76,207 +45,58 @@ body {
     text-align: center;
 }
 
-/*--------------*/
+/*-------------------------------------*/
 
-.well {
-  min-height: 10px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #151515;
-  border: 1px solid #030303;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-.well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-/*---------------Panel default----------------*/
-
-.panel-default {
-  border-color: #282828;
-}
-.panel-default > .panel-heading {
-  color: #ffffff;
-  background-color: #3c3c3c;
-  border-color: #282828;
-}
-.panel-default > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #282828;
-}
-.panel-default > .panel-heading .badge {
-  color: #3c3c3c;
-  background-color: #888888;
-}
-.panel-default > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #282828;
-}
-
-/*--------- Tipo de letra----------------*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Verdana", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
-  color: #ffffff;
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/*h1,
-.h1 {
-  font-size: 56px;
-}
-h2,
-.h2 {
-  font-size: 45px;
-}
-h3,
-.h3 {
-  font-size: 34px;
-}
-h4,
-.h4 {
-  font-size: 24px;
-}
-h5,
-.h5 {
-  font-size: 20px;
-}
-h6,
-.h6 {
-  font-size: 16px;
+/*#menu {  text-align: center;
+font-size: 0.7em;
+width: 320px;
+margin: 20px;
 }*/
-/*-------------------- Responsive Web ------------------*/
-
-@media only screen and (max-width: 768px) {
-    body {
-      font-size: 11px;
-      line-height: 1.42857143;
-    }
-    /* For mobile phones: */
-    h1,
-    .h1 {
-      font-size: 26px;
-    }
-    h2,
-    .h2 {
-      font-size: 22px;
-    }
-    h3,
-    .h3 {
-      font-size: 18px;
-    }
-    h4,
-    .h4 {
-      font-size: 14px;
-    }
-    h5,
-    .h5 {
-      font-size: 11px;
-    }
-    h6,
-    .h6 {
-      font-size: 7px;
-    }
-    
-    
-    .well {
-      min-height: 10px;
-      padding: 19px;
-      margin-bottom: 20px;
-    }
-    #divbodymenu {
-        /*position: absolute;*/
-        /*height: 85%;*/
-        width: 225px;
-    }
-    .panel-heading{padding:2px 5px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
-    .list-group-item{position:relative;display:block;padding:2px 5px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}
-    
+#menu ul { list-style-type: none;}
+/*----El sig reg para que baje el menu y no se monte*/
+#menu ul li.nivel1 { width: 162px;}
+#menu ul a:active { width: 362px;}
+/*#menu ul li.primera { border-top: solid 1px #FFF;}*/
+#menu ul li a, #menu ul li span {display: block;
+/*text-decoration: none;*/
+/*color: #fff;
+/*background-color: #399;*/
+/*border: solid 1px #fff;
+border-top: none;*/
+/*padding: 8px;*/
+position: relative;
 }
-
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    
-    h1,
-    .h1 {
-      font-size: 53px;
-    }
-    h2,
-    .h2 {
-      font-size: 42px;
-    }
-    h3,
-    .h3 {
-      font-size: 31px;
-    }
-    h4,
-    .h4 {
-      font-size: 21px;
-    }
-    h5,
-    .h5 {
-      font-size: 17px;
-    }
-    h6,
-    .h6 {
-      font-size: 13px;
-    }
+a:active {position: relative;}
+#menu ul li a:active {/*background-color: #6CC;
+color: #000;*/
+border-bottom: solid 1px #6CC;
+position: relative;
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    
-    h1,
-    .h1 {
-      font-size: 56px;
-    }
-    h2,
-    .h2 {
-      font-size: 45px;
-    }
-    h3,
-    .h3 {
-      font-size: 34px;
-    }
-    h4,
-    .h4 {
-      font-size: 24px;
-    }
-    h5,
-    .h5 {
-      font-size: 18px;
-    }
-    h6,
-    .h6 {
-      font-size: 16px;
-    }
+#menu ul li span.nivel1 {display: block;}
+#menu ul li:hover span.nivel1 {cursor: pointer;}
+#menu ul li ul {display: none;}
+#menu ul li a:hover ul, #menu ul li a:active ul {display: block;
+position: relative;/*width: 162px;/*background-color: #6CC;*/
 }
+#menu ul li a:link:hover ul {display: none;}
+#menu ul li a:active:hover ul  {display: block;}
+/*#menu ul li ul li a {width: 160px;
+padding: 6px 0px 8px 0px;
+border: none;
+border-top:  solid 1px #fff;
+background-color: #3AB7CB;
+font-weight: normal;
+}*/
+/*#menu ul li ul li a:hover {
+position: relative;
+text-decoration: underline;
+border-bottom: none;
+color: #000;
+background-color: #359BB8;
+}*/
+/*#menu ul li ul li.primera {border-top: none;}
+/*table.falsa {border-collapse:collapse;
+border:0px;
+float: left;
+position: relative;
+}*/

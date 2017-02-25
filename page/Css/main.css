@@ -92,7 +92,12 @@ body {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-
+.modal-footer{
+    padding:19px 20px 20px;
+    margin-top:15px;
+    text-align:right;
+    border-top:1px solid #e5e5e5
+}
 /*---------------Panel default----------------*/
 
 .panel-default {
