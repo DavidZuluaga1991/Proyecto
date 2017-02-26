@@ -6,7 +6,6 @@
 
 /*-------------------- Proceso que sirve para linkear los botones ------------------------*/
 'use strict';
-
 var app = angular.module('proyecto',['ui.bootstrap','ui.router']);
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/main");
