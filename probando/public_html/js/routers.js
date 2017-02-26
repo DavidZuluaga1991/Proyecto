@@ -15,7 +15,7 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             {name: 'Actualizacion Contable', url: '/Actualización Contable', templateUrl: 'views/menu/accounting/accountingupdate.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Tributaria', url: '/Tributaria', templateUrl: 'views/menu/accounting/tributary.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Auditoria y revisoria fiscal', url: '/Auditoria y revisoria fiscal', templateUrl: 'views/menu/accounting/audit_and_tax_review.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Normas internacionales', url: '/Normas internacionales', templateUrl: '<h3>Normas internacionales!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Normas internacionales', url: '/Normas internacionales', templateUrl: 'views/menu/accounting/audit_and_tax_review.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Medios magneticos', url: '/Medios magneticos', templateUrl: '<h3>Medios magneticos!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Costos y sistema productivo', url: '/Costos y sistema productivo', templateUrl: '<h3>Costos y sistema productivo!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Analisis financiero', url: '/Analisis financiero', templateUrl: '<h3>Analisis financiero!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
