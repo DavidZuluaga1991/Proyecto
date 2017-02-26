@@ -2,11 +2,11 @@
     <div class="modal-header" id="divhead">
     </div>
     <div id="divbody">
-        <div class="well blockquote"> <div class="panel-default"> <div id="txtbarner"> <h4> {{proyecto.barner}}</h4></div></div></div>
+        <div class="well blockquote"> <div class="panel-default"> <div id="txtbarner"> <h4> {{mainctrl.proyect.barner}}</h4></div></div></div>
         <div id="divbodymenu" class="well">
             <div class="left-nav">
                 <accordion close-others="true" >
-                    <accordion-group is-open="isopen" ng-repeat="menus in proyecto.menus"> 
+                    <accordion-group is-open="isopen" ng-repeat="menus in mainctrl.proyect.menus"> 
                         <accordion-heading> <h5> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></h5> </accordion-heading>
                         <div ng-repeat="submenu in menus.submenus"><a ui-sref="{{submenu.name}}" ui-sref-active="active" class="list-group-item">{{submenu.name}}</a></div>
                     </accordion-group>
@@ -20,6 +20,6 @@
         </div>
     </div>
     <div class="modal-footer">
-        <p> {{proyecto.footer}}</p>
+        <p> {{mainctrl.proyect.footer}}</p>
     </div>
 </div>

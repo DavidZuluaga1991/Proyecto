@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
     'use strict';
-app.controller('ProyectoController', function($scope) {
-    $scope.proyecto = {
+app.controller('proyectcontroller', function() {
+    this.proyect = {
           barner: 'Asesorias en Contabilidad, tributaria, Analisis Financiero y Sistemas',
           footer: 'Cali - Valle del Cauca - Accex Asociados Outsoursing',
           menus:[
