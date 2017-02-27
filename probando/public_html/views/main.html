@@ -5,6 +5,7 @@
         <div class="well blockquote"> <div class="panel-default"> <div id="txtbarner"> <h4> {{mainctrl.proyect.barner}}</h4></div></div></div>
         <div id="divbodymenu" class="well">
             <div class="left-nav">
+                
                 <accordion close-others="true" >
                     <accordion-group is-open="isopen" ng-repeat="menus in mainctrl.proyect.menus"> 
                         <accordion-heading> <h5> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></h5> </accordion-heading>
