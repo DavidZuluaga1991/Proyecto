@@ -6,7 +6,6 @@
 
 /*-------------------- Proceso que sirve para linkear los botones ------------------------*/
 'use strict';
-var app = angular.module('proyect',['ui.bootstrap','ui.router']);
 app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/main");
         var link = [
@@ -16,14 +15,14 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             {name: 'Tributaria', url: '/Tributaria', templateUrl: 'views/menu/accounting/tributary.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Auditoria y revisoria fiscal', url: '/Auditoria y revisoria fiscal', templateUrl: 'views/menu/accounting/audit_and_tax_review.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Normas internacionales', url: '/Normas internacionales', templateUrl: 'views/menu/accounting/audit_and_tax_review.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Medios magneticos', url: '/Medios magneticos', templateUrl: '<h3>Medios magneticos!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Costos y sistema productivo', url: '/Costos y sistema productivo', templateUrl: '<h3>Costos y sistema productivo!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Analisis financiero', url: '/Analisis financiero', templateUrl: '<h3>Analisis financiero!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Mantenimiento de Equipos', url: '/Mantenimiento de Equipos', templateUrl: '<h3>Mantenimiento de Equipos!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Contabilidad basica', url: '/Contabilidad basica', templateUrl: '<h3>Contabilidad basica!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Contabilidad intermedia', url: '/Contabilidad intermedia', templateUrl: '<h3>Contabilidad intermedia!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: 'Contabilidad de costos!', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Contactenos', url: '/Contactenos', templateUrl: 'views/menu/contact/contact.html', controller: "ItemController",as: "itemctrl",parent: "main"}
+            {name: 'Medios magneticos', url: '/Medios magneticos', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Costos y sistema productivo', url: '/Costos y sistema productivo', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Analisis financiero', url: '/Analisis financiero', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Mantenimiento de Equipos', url: '/Mantenimiento de Equipos', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Contabilidad basica', url: '/Contabilidad basica', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Contabilidad intermedia', url: '/Contabilidad intermedia', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Contactenos', url: '/Contactenos', templateUrl: 'views/menu/contact/contact.html', controller: "contactcontroller",as: "contactctrl",parent: "main"}
         ];
         for (var valor of link) {
             var MenuState = { name: valor.name, url: '/' + valor.name, templateUrl: valor.templateUrl,controller: valor.controller,controllerAs: valor.as,parent: valor.parent};
