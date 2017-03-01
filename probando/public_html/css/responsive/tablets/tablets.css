@@ -15,8 +15,6 @@ and open the template in the editor.
       font-size: 12.5px;
       line-height: 1.42857143;
     }
-    
-    
     h1,
     .h1 {
       font-size: 53px;
@@ -46,8 +44,7 @@ and open the template in the editor.
         width: 205px;
     }
     #divbodymenu2{
-        width: 70%;
-        background-color: aqua;
+        width: 63%;
     }
     .modal-footer{
         padding:25px 20px 20px;
@@ -59,23 +56,12 @@ and open the template in the editor.
     .list-group-item{position:relative;display:block;padding:2px 5px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}
 }
 
-@media only screen and (min-width: 600px) { 
-    #divbodymenu {
-        width: 205px;
-    }       
-    #divbodymenu2{
-        width: 63%;
-        background-color: #ffffff;
-    }
-}
-
 @media only screen and (min-width: 630px) { 
     #divbodymenu {
         width: 205px;
     }       
     #divbodymenu2{
         width: 65%;
-        background-color: #ffffff;
     }
 }
 

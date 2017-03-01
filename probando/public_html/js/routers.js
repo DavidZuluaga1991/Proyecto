@@ -22,7 +22,8 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             {name: 'Mantenimiento de Equipos', url: '/Mantenimiento de Equipos', templateUrl: '<h3>Mantenimiento de Equipos!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Contabilidad basica', url: '/Contabilidad basica', templateUrl: '<h3>Contabilidad basica!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'Contabilidad intermedia', url: '/Contabilidad intermedia', templateUrl: '<h3>Contabilidad intermedia!</h3>', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: 'Contabilidad de costos!', controller: "ItemController",as: "itemctrl",parent: "main"}
+            {name: 'Contabilidad de costos', url: '/Contabilidad de costos', templateUrl: 'Contabilidad de costos!', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'Contactenos', url: '/Contactenos', templateUrl: 'views/menu/contact/contact.html', controller: "ItemController",as: "itemctrl",parent: "main"}
         ];
         for (var valor of link) {
             var MenuState = { name: valor.name, url: '/' + valor.name, templateUrl: valor.templateUrl,controller: valor.controller,controllerAs: valor.as,parent: valor.parent};
