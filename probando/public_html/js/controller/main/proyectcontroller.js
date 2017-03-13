@@ -11,7 +11,7 @@ app.controller('proyectcontroller', function() {
           menus:[
                   {
                       name:'Inicio',
-                      submenus:[{name:'Inicio'}]
+                      submenus:[{name:'Quienes Somos'}]
                   },
                   {
                       name:'Contabilidad',
