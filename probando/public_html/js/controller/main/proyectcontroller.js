@@ -11,42 +11,43 @@ app.controller('proyectcontroller', function() {
           menus:[
                   {
                       name:'Inicio',
-                      submenus:[{name:'Quienes Somos'}]
+                      submenus:[{name:'Quienes Somos',item: 'I1'}]
                   },
                   {
                       name:'Contabilidad',
                       submenus:[
-                          {name:'Actualizacion Contable'},
-                          {name:'Tributaria'},
-                          {name:'Auditoria y revisoria fiscal'},
-                          {name:'Normas internacionales'},
-                          {name:'Medios magneticos'},
-                          {name:'Costos y sistema productivo'},
-                          {name:'Analisis financiero'}
+                          {name:'Actualizacion Contable',item: 'C1'},
+                          {name:'Tributaria',item: 'C2'},
+                          {name:'Auditoria y Revisoria Fiscal',item: 'C3'},
+                          {name:'Normas Internacionales',item: 'C4'},
+                          {name:'Medios Magneticos',item: 'C5'},
+                          {name:'Costos y Sistema Productivo',item: 'C6'},
+                          {name:'Analisis Financiero',item: 'C7'},
+                          {name:'Implementacion Contable',item: 'C8'}
                       ]
                   },
                   {
                       name:'Sistemas',
                       submenus:[
-                          {name:'Mantenimiento de Equipos'},
-                          {name:'Diseños Web'},
-                          {name:'Proyectos'}
+                          {name:'Mantenimiento de Equipos',item: 'S1'},
+                          {name:'Diseños Web',item: 'S2'},
+                          /*{name:'Proyectos',item: 'S3'}*/
                       ]
                   },
                   {
                       name:'Capacitaciones',
                       submenus:[
-                          {name:'Contabilidad basica'},
-                          {name:'Contabilidad intermedia'},
-                          {name:'Contabilidad de costos'},
-                          {name:'Actualizacion tributaria'},
-                          {name:'CG-UNO'},
-                          {name:'Normas internacionales'}
+                          {name:'Contabilidad Basica',item: 'CA1'},
+                          {name:'Contabilidad Intermedia',item: 'CA2'},
+                          {name:'Contabilidad de Costos',item: 'CA3'},
+                          {name:'Actualizacion Tributaria',item: 'CA4'},
+                          {name:'CG-UNO',item: 'CA5'},
+                          {name:'Normas Internacionales',item: 'CA6'}
                       ]
                   },
                   {
                       name:'Contactenos',
-                      submenus:[{name:'Contactenos'}]
+                      submenus:[{name:'Contactenos',item: 'CO1'}]
                   }
                ]
         };

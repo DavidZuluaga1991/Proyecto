@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-lg-6">
             <div class="well bs-component">
-                <form name="contactform" class="form-horizontal" ng-submit="contactctrl.addcomments()" role="form" novalidate>
+                <form name="contactform" class="form-horizontal" role="form" novalidate>
                     <fieldset>
                         <legend>Contactenos</legend>
                         <div class="form-group">
@@ -21,11 +21,6 @@
                             <label for="inputPassword" class="col-lg-2 control-label">Telefono</label>
                             <div class="col-lg-10">
                                 <input ng-model="contactctrl.comment.phone" type="text" class="form-control" id="inputPassword" placeholder="Telefono" required>
-                                <!--div class="checkbox">
-                                    <label>
-                                        <input type="checkbox"> Checkbox
-                                    </label>
-                                </div-->
                             </div>
                         </div>
                         <div class="form-group" required>
@@ -38,20 +33,16 @@
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
                                 <button type="reset" class="btn btn-default" ng-click="contactctrl.clear()">Cancelar</button>
-                                <button type="submit" class="btn btn-primary" ng-disabled = "!contactform.$valid">Enviar</button>
+                                <button type="submit" class="btn btn-primary" ng-click="contactctrl.addcomments()" ng-disabled = "!contactform.$valid">Enviar</button>
                             </div>
                         </div>
                     </fieldset>
                 </form>
-                <!--blockquote ng-repeat="comment in contactctrl.comments">
-                   <p>{{comment.name}} - {{comment.email}}</p>
-                    <footer>
-                        {{comment.body}}
-                    </footer>
-                </blockquote>
-                <div ng-if = "!contactform.$valid" class="alert alert-danger">Formulario Invalido</div-->
                 Valid : {{ contactform.$valid }}
             </div>
-        </div
+        </div>
     </div>
+</div>
+<div>
+    
 </div>

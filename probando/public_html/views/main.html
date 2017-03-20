@@ -9,7 +9,7 @@
                 <accordion close-others="true" >
                     <accordion-group is-open="isopen" ng-repeat="menus in mainctrl.proyect.menus"> 
                         <accordion-heading> <h5> {{menus.name}} <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i></h5> </accordion-heading>
-                        <div ng-repeat="submenu in menus.submenus"><a ui-sref="{{submenu.name}}" ui-sref-active="active" class="list-group-item">{{submenu.name}}</a></div>
+                        <div ng-repeat="submenu in menus.submenus" ><a ui-sref="{{submenu.item}}" ui-sref-active="active" class="list-group-item">{{submenu.name}}</a></div>
                     </accordion-group>
                 </accordion>
             </div>
