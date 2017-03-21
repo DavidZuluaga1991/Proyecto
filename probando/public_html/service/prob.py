@@ -48,7 +48,7 @@ def main():
  
  while True:
   # to = str(raw_input("produccion1@softpymes.com.co")).lower().strip()
-  to = "angelica.accexasociadossas@gmail.com"
+  to = "produccion1@softpymes.com.co"
   print (to)
   if to != "":
    break
@@ -57,13 +57,13 @@ def main():
  
  sub = "pro"
  bodymsg = "Mensaje: hola como estas realizando pruebas con python desde email"
- header = "Para: " + to 
+ header = "<div> Para: " + to +"</div> <div><br></div> <div>" + "De: " + gmail_user + "</div><div><br></div> <div>" + "Asunto: " + sub + "<div></div> <br></div> "
  print (header)
- msg = header + bodymsg 
+ msg = header + bodymsg + "\n\n"
  print (msg)
-
+ 
  try:
-  smtpserver.sendmail(gmail_user, to, '<br clear="all">"Hola como estaas"<br clear="all">"bn o q"')
+  smtpserver.sendmail(gmail_user, to, header)
  except smtplib.SMTPException:
   print ("El correo no pudo ser enviado" + "\n")
   smtpserver.close()

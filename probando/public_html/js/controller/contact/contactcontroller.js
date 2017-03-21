@@ -1,7 +1,7 @@
 
 
-/*var contactcontroller2 =*/(function (){
-    angular.module('contact.controllers',[]) 
+(function (){
+    angular.module('contact.controllers',[])
         .controller('contactcontroller', function () {
             this.comments = [];
             this.comment = {};
@@ -17,7 +17,8 @@
                this.comments.push(this.comment);
                this.comment = {};
             };
-        }); 
+        })   
+                
 })();
 
 
