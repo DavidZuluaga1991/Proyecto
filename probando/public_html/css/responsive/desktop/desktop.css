@@ -72,8 +72,8 @@ and open the template in the editor.
 
 @media only screen and (min-width: 1280px) { 
     body {
-      font-size: 12.7px;
-      line-height: 1.42857143;
+        font-size: 12.7px;
+        line-height: 1.42857143;
     }
     #divbodymenu {
         width: 230px;
@@ -85,8 +85,8 @@ and open the template in the editor.
 
 @media only screen and (min-width: 1350px) { 
     body {
-      font-size: 12.8px;
-      line-height: 1.42857143;
+        font-size: 12.8px;
+        line-height: 1.42857143;
     }
     #divbodymenu {
         width: 235px;
@@ -98,8 +98,8 @@ and open the template in the editor.
 
 @media only screen and (min-width: 1420px) { 
     body {
-      font-size: 13px;
-      line-height: 1.42857143;
+        font-size: 13px;
+        line-height: 1.42857143;
     }
     #divbodymenu {
         width: 240px;
@@ -147,13 +147,13 @@ and open the template in the editor.
 
 @media only screen and (min-width: 1880px) {
     #divbodymenu {
-        width: 275px;
+        width: 355px;
     }
     #divbodymenu2{
-        width: 84.5%;
+        width: 1465px;
     }
     body {
-      font-size: 14px;
-      line-height: 1.42857143;
+        font-size: 14px;
+        line-height: 1.42857143;
     }
 }

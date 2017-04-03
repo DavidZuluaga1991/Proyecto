@@ -26,14 +26,14 @@ app.controller('proyectcontroller', function() {
                           {name:'Implementacion Contable',item: 'C8'}
                       ]
                   },
-                  {
+                  /*{
                       name:'Sistemas',
                       submenus:[
                           {name:'Mantenimiento de Equipos',item: 'S1'},
                           {name:'Diseños Web',item: 'S2'},
                           /*{name:'Proyectos',item: 'S3'}*/
-                      ]
-                  },
+                      /*]
+                  },*/
                   {
                       name:'Capacitaciones',
                       submenus:[
