@@ -2,6 +2,7 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group>
             <file>file:/C:/PC%20Portatil%20-%20Archivos/Proyecto/probando/public_html/css/img/imgs.css</file>
             <file>file:/C:/PC%20Portatil%20-%20Archivos/Proyecto/probando/public_html/views/main.html</file>
@@ -9,5 +10,8 @@
             <file>file:/C:/PC%20Portatil%20-%20Archivos/Proyecto/probando/public_html/views/menu/initiate/start.html</file>
             <file>file:/C:/PC%20Portatil%20-%20Archivos/Proyecto/probando/public_html/index.html</file>
         </group>
+=======
+        <group/>
+>>>>>>> origin/gh-pages
     </open-files>
 </project-private>

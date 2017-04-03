@@ -1,6 +1,4 @@
-#! /usr/bin/python
-#import smtplib
- 
+
 #!/usr/bin/env python3
 # importamos la libreria smtplib (no es necesario instalarlo)
 import smtplib 
@@ -10,9 +8,9 @@ from email.mime.text import MIMEText
 
 # definimos los correo de remitente y receptor
 ##se envia un mail a
-addr_to   = 'angelica.accexasociadossas@gmail.com'
+addr_to   = 'angelica.accexasociadossas@gmail.com'#'davidzuluaga1991@gmail.com'
 ##el mail sale desde el correo
-addr_from = "davidzuluaga1991@gmail.com"
+addr_from = 'davidzuluaga1991@gmail.com'#'angelica.accexasociadossas@gmail.com'
 
 # Define SMTP email server details
 # smtp_server = 'mail.gmail.com'
@@ -23,9 +21,10 @@ smtp_pass   = '19910808Dz'
 msg = MIMEMultipart() 
 msg['To'] = addr_to
 msg['From'] = addr_from
-msg['Subject'] = 'Prueba'
+msg['Subject'] = 'Ingresaron a un Formulario'
 #cuerpo del mensaje en HTML y si fuera solo text puede colocar en el 2da parametro 'plain'
-msg.attach(MIMEText('<h1>titulo de mensaje<p>cuerpo de mensaje','html'))
+msg.attach(MIMEText('<div> Para:  '+ addr_to +'</div> <div><br></div> <div> + De:  '+ addr_from + '</div><div><br></div> <div>Asunto: Hola<div></div> <br></div> ','html'))
+
 
 # inicializamos el stmp para hacer el envio
 server = smtplib.SMTP("smtp.gmail.com", 587)
