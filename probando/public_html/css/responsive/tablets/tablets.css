@@ -52,8 +52,21 @@ and open the template in the editor.
         text-align:right;
         border-top:1px solid #e5e5e5
     }
-    .panel-heading{padding:2px 5px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px}
-    .list-group-item{position:relative;display:block;padding:2px 5px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}
+    .panel-heading{
+        padding:2px 5px;
+        border-bottom:1px solid transparent;
+        border-top-right-radius:3px;
+        border-top-left-radius:3px
+    }
+    /*Class para modificar los items a seleccionar.*/
+    .list-group-item{
+        position:relative;
+        display:block;
+        padding:1px 5px;
+        margin-bottom:-1px;
+        background-color:#fff;
+        border:1px solid #ddd
+    }
 }
 
 @media only screen and (min-width: 630px) { 
