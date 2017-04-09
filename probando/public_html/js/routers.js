@@ -24,9 +24,9 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             {name: 'CA1', url: "contabilidad_basica", templateUrl: 'views/menu/trainings/basic_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'CA2', url: "contabilidad_intermedia", templateUrl: 'views/menu/trainings/intermediate _accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'CA3', url: "contabilidad_de_costos", templateUrl: 'views/menu/trainings/cost_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA4', url: "actualizacion_tributaria", templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA5', url: "cg_uno", templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA6', url: "normas_internacionales", templateUrl: 'rutahtml', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA4', url: "actualizacion_tributaria", templateUrl: 'views/menu/trainings/tax_update.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA5', url: "cg_uno", templateUrl: 'views/menu/trainings/cg_uno.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA6', url: "normas_internacionales", templateUrl: 'views/menu/trainings/international_standards.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'CO1', url: "contactenos", templateUrl: 'views/menu/contact/contact.html', controller: "contactcontroller",as: "contactctrl",parent: "main"}
         ];
         for (var valor of link) {

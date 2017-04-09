@@ -7,8 +7,19 @@ and open the template in the editor.
     Created on : 2/04/2017, 05:52:50 PM
     Author     : HP PAVILON
 */
+.imgflot{
+    float: left;
+}
 #img1{
     width: 200px;
     /*padding: 5px 50px 0px 0px;
     margin: 15px 0px 0px 100px;*/
+}
+#imgtributary{
+    width: 350px;
+    margin: 5px 0px 0px 300px;
+}
+#imgaudit_and_tax_review{
+    width: 300px;
+    margin: 15px 0px 0px 100px;
 }
