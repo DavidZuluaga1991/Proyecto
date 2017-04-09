@@ -34,15 +34,15 @@ and open the template in the editor.
 }
 
 #divbodymenu {
-    height: 85%;
-    width: 355px;
+    height: 89%;
+    width: 380px;
     float: left;
     border-radius: 5px 5px 5px 5px;
     text-align: justify;
 }
 #divbodymenu2{
     /*position: absolute;*/
-    height: 85%;
+    height: 89%;
     width: 1465px;
     float: right;
     border-radius: 5px 5px 5px 5px;

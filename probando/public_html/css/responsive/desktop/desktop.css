@@ -141,16 +141,16 @@ and open the template in the editor.
         width: 270px;
     }    
     #divbodymenu2{
-        width: 84%;
+        width: 1420px;
     }
 }
 
 @media only screen and (min-width: 1880px) {
     #divbodymenu {
-        width: 355px;
+        width: 380px;
     }
     #divbodymenu2{
-        width: 1465px;
+        width: 1430px;
     }
     body {
         font-size: 14px;
