@@ -10,10 +10,10 @@ and open the template in the editor.
 /*--------- Tamaño y diseño de los paneles ------*/
 #div{
     position: absolute; 
-    top: 2%; 
-    left: 2%; 
-    width: 96%;
-    height: 96%;
+    top: 18px; 
+    left: 150px; 
+    width: 1200px;
+    height: 93%;
     text-align: justify;
 }
 
@@ -33,18 +33,23 @@ and open the template in the editor.
     height: 70%;
 }
 
+    /*para cambiar tamaño de los paneles del menu*/
 #divbodymenu {
-    height: 89%;
-    width: 380px;
+    /*Alto del panel 1*/
+    height: 480px;
+    width: 540px;
     float: left;
     border-radius: 5px 5px 5px 5px;
-    text-align: justify;
+    text-align: left;
 }
 #divbodymenu2{
     /*position: absolute;*/
-    height: 89%;
-    width: 1465px;
+    height: 480px;
+    width: 1265px;
     float: right;
     border-radius: 5px 5px 5px 5px;
     text-align: justify;
+}
+.panel-body{
+    padding:5px
 }

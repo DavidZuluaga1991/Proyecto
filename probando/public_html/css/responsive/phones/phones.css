@@ -53,18 +53,18 @@ and open the template in the editor.
         width: 58%;
     }
     .panel-heading{
-        padding:1px 5px;
+        padding:1px 2px;
         border-bottom:1px solid transparent;
         border-top-right-radius:3px;
-        border-top-left-radius:3px
+        border-top-left-radius:3px;
     }
     .list-group-item{
         position:relative;
         display:block;
-        padding:2px 5px;
+        padding:1px 2px;
         margin-bottom:-1px;
         background-color:#fff;
-        border:1px solid #ddd
+        border:1px solid #ddd;
     }
     .modal-footer{
         padding:25px 20px 20px;

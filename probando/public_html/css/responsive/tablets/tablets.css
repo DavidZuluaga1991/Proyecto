@@ -11,6 +11,9 @@ and open the template in the editor.
 /*868px - 600px*/
 
 @media only screen and (min-width: 600px) {
+    legend{
+        color: #ffffff;
+    }
     body {
       font-size: 12.5px;
       line-height: 1.42857143;
@@ -29,11 +32,13 @@ and open the template in the editor.
     }
     h4,
     .h4 {
-      font-size: 18px;
+      font-size: 15px;
+      line-height: 1.52857143;
     }
     h5,
     .h5 {
       font-size: 13px;
+      /*line-height: 1.42857143;*/
     }
     h6,
     .h6 {
@@ -48,12 +53,12 @@ and open the template in the editor.
     }
     .modal-footer{
         padding:25px 20px 20px;
-        margin-top:38px;
+        margin-top:140px;
         text-align:right;
         border-top:1px solid #e5e5e5
     }
     .panel-heading{
-        padding:2px 5px;
+        padding:2px 2px;
         border-bottom:1px solid transparent;
         border-top-right-radius:3px;
         border-top-left-radius:3px
@@ -62,7 +67,7 @@ and open the template in the editor.
     .list-group-item{
         position:relative;
         display:block;
-        padding:1px 5px;
+        padding:1px 2px;
         margin-bottom:-1px;
         background-color:#fff;
         border:1px solid #ddd
