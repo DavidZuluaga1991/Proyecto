@@ -36,7 +36,7 @@ and open the template in the editor.
     /*para cambiar tamaño de los paneles del menu*/
 #divbodymenu {
     /*Alto del panel 1*/
-    height: 480px;
+    height: 490px;
     width: 540px;
     float: left;
     border-radius: 5px 5px 5px 5px;
@@ -44,7 +44,7 @@ and open the template in the editor.
 }
 #divbodymenu2{
     /*position: absolute;*/
-    height: 480px;
+    height: 490px;
     width: 1265px;
     float: right;
     border-radius: 5px 5px 5px 5px;

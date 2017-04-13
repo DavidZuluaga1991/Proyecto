@@ -21,12 +21,12 @@ app.config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlR
             {name: 'C8', url: "implementacion_contable", templateUrl: 'views/menu/accounting/accounting_implementation.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             /*{name: 'S1', templateUrl: 'views/menu/systems/maintenance_of_equipment.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'S2', templateUrl: 'views/menu/systems/web_design.html', controller: "ItemController",as: "itemctrl",parent: "main"},*/
-            {name: 'CA1', url: "contabilidad_basica", templateUrl: 'views/menu/trainings/basic_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA2', url: "contabilidad_intermedia", templateUrl: 'views/menu/trainings/intermediate _accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA3', url: "contabilidad_de_costos", templateUrl: 'views/menu/trainings/cost_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA4', url: "actualizacion_tributaria", templateUrl: 'views/menu/trainings/tax_update.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA5', url: "cg_uno", templateUrl: 'views/menu/trainings/cg_uno.html', controller: "ItemController",as: "itemctrl",parent: "main"},
-            {name: 'CA6', url: "normas_internacionales", templateUrl: 'views/menu/trainings/international_standards.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA1', url: "c_contabilidad_basica", templateUrl: 'views/menu/trainings/basic_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA2', url: "c_contabilidad_intermedia", templateUrl: 'views/menu/trainings/intermediate _accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA3', url: "c_contabilidad_de_costos", templateUrl: 'views/menu/trainings/cost_accounting.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA4', url: "c_actualizacion_tributaria", templateUrl: 'views/menu/trainings/tax_update.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA5', url: "c_cg_uno", templateUrl: 'views/menu/trainings/cg_uno.html', controller: "ItemController",as: "itemctrl",parent: "main"},
+            {name: 'CA6', url: "c_normas_internacionales", templateUrl: 'views/menu/trainings/international_standards.html', controller: "ItemController",as: "itemctrl",parent: "main"},
             {name: 'CO1', url: "contactenos", templateUrl: 'views/menu/contact/contact.html', controller: "contactcontroller",as: "contactctrl",parent: "main"}
         ];
         for (var valor of link) {
