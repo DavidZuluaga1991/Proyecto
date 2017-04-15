@@ -15,3 +15,10 @@ and open the template in the editor.
 .imgflotright{
     float: right;
 }
+#imgbarner{
+    width: 1200px;
+    height: 100%;
+    background-color: beige;
+    border-radius: 5px 5px 5px 5px;
+    text-align: justify;
+}

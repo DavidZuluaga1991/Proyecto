@@ -6,7 +6,7 @@
     'use strict';
 app.controller('proyectcontroller', function() {
     this.proyect = {
-          barner: 'Asesorias en Contabilidad, tributaria, Analisis Financiero y Sistemas',
+          barner: 'Asesorias en Contabilidad, Tributaria, Analisis Financiero y Sistemas',
           footer: 'Cali - Valle del Cauca - Accex Asociados Outsoursing',
           menus:[
                   {
